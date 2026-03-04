@@ -1,5 +1,7 @@
-app = "mc-builder"
+app = "mc-builder" # Change this to your actual app name
 primary_region = "bom"
+
+[build]
 
 [[services]]
   internal_port = 10000
@@ -8,3 +10,8 @@ primary_region = "bom"
   [[services.ports]]
     handlers = ["tls", "http"]
     port = 443
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+    grace_period = "1s"

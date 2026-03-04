@@ -1,0 +1,10 @@
+app = "mc-builder"
+primary_region = "bom"
+
+[[services]]
+  internal_port = 10000
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443

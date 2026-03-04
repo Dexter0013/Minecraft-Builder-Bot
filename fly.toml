@@ -1,4 +1,4 @@
-app = "Minecraft-Builder-Bot" # Change this to your actual app name
+app = "minecraft-builder-bot" # Change this to your actual app name
 primary_region = "bom"
 
 [build]
